@@ -8,7 +8,7 @@ def preprocessdata(Gender, Married, Education, Self_Employed, ApplicantIncome,
     test_data = [[Gender, Married, Education, Self_Employed, ApplicantIncome,
        CoapplicantIncome, LoanAmount, Loan_Amount_Term, Credit_History,
        Property_Area] ]  
-    trained_model = joblib.load('C:/Users/Uday Goel/Desktop/CredPred/CrPred/CrPred/model.pkl')
+    trained_model = joblib.load('model.pkl')
     prediction = trained_model.predict(test_data) 
 
     return prediction 
