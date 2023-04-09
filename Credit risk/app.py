@@ -1,8 +1,10 @@
-from flask import Flask, render_template, request
 from logging import debug
-import utils                           
+from flask import Flask, render_template, request 
+import utils  
 from utils import preprocessdata 
-app = Flask(__name__)
+
+app = Flask(__name__) 
+
 @app.route('/') 
 def home(): 
     return render_template('index.html') 
@@ -10,7 +12,6 @@ def home():
 
 def predict():  
     if request.method == 'POST': 
-        print("hi")
         Gender = request.form.get('Gender')
         Married = request.form.get('Married')
         Education = request.form.get('Education')
@@ -28,5 +29,5 @@ def predict():
 
     return render_template('predict.html', prediction=prediction) 
 
-if __name__ == '__main__':
-    app.run(debug=True)
+if __name__ == '__main__': 
+    app.run() 

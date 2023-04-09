@@ -10,8 +10,16 @@
     <div class="row justify-content-md-center">
         <div class="thumbnail">
             {% if prediction == 0 %}
-                <!-- <img src="{{url_for('static', filename='images/iris_setosa.jpg')}}" class="img-thumbnail" /> --> 
-                <h1>No</h1>
+            <section class="text-gray-400 bg-gray-900 body-font">
+                <div class="container px-5 py-24 mx-auto">
+                  <div class="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center">
+                    <p class="leading-relaxed text-lg">The Person Cannot be Approved for the Loan</p>
+                    <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-8 mb-6"></span>
+                    <h2 class="text-white font-medium title-font tracking-wider text-sm">HOLDEN CAULFIELD</h2>
+                    <p class="text-gray-500">A Product by CredPred</p>
+                  </div>
+                </div>
+              </section>
             {% endif %}
         </div>
     </div>
@@ -19,8 +27,16 @@
     <div class="row justify-content-md-center">
         <div class="thumbnail">
             {% if prediction == 1 %}
-                <!-- <img src="{{url_for('static', filename='images/iris_versicolor.jpg')}}" class="img-thumbnail" /> --> 
-                <h1>Yes</h1>
+            <section class="text-gray-400 bg-gray-900 body-font">
+                <div class="container px-5 py-24 mx-auto">
+                  <div class="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center">
+                    <p class="leading-relaxed text-lg">The Person Can be Approved for the Loan</p>
+                    <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-8 mb-6"></span>
+                    <h2 class="text-white font-medium title-font tracking-wider text-sm">HOLDEN CAULFIELD</h2>
+                    <p class="text-gray-500">A Product by CredPred</p>
+                  </div>
+                </div>
+              </section>
             {% endif %}
         </div>
 
