@@ -10,6 +10,7 @@ def home():
 
 def predict():  
     if request.method == 'POST': 
+        print("hi")
         Gender = request.form.get('Gender')
         Married = request.form.get('Married')
         Education = request.form.get('Education')
